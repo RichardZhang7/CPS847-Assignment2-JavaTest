@@ -53,6 +53,10 @@
         <path refid="CPS847.classpath"/>
         <path refid="JUnit 5.libraryclasspath"/>
     </path>
+    <path id="run.JUnitTest (1).classpath">
+        <path refid="CPS847.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
@@ -129,6 +133,11 @@
     <target name="TestRunner">
         <java classname="TestRunner" failonerror="true" fork="yes">
             <classpath refid="run.TestRunner.classpath"/>
+        </java>
+    </target>
+    <target name="JUnitTest (1)">
+        <java classname="JUnitTest" failonerror="true" fork="yes">
+            <classpath refid="run.JUnitTest (1).classpath"/>
         </java>
     </target>
     <target name="junitreport">
