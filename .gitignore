@@ -2,6 +2,6 @@
 .settings
 .classpath
 .project
-**/test.txt
+test.txt
 
 
