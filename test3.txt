@@ -19,5 +19,3 @@ test apr 28
 
 
 test may 3
-
-in test3 (test2) rn
